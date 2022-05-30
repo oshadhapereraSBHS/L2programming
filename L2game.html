@@ -31,20 +31,20 @@
             canvasContext = canvas.getContext('2d');
             // document.addEventListener('keydown', keyPressed);
             // document.addEventListener('keyup', keyReleased);
-            // setInterval(mainloop, 1000 / 50);
+            setInterval(mainloop, 1000 / 50);
         }
 
-        // function mainloop() {
-        //     colorRect(0, 0, canvas.width, canvas.height, 'black'); // bg
+        function mainloop() {
+            colorRect(0, 0, canvas.width, canvas.height, 'black'); // bg
         //     drawImg(player, playerXpos, playerYpos, PLAYER_SIZE, PLAYER_SIZE)
         //     playerMove();
 
-        // }
+        }
 
-        // function colorRect(x, y, w, h, c) {
-        //     canvasContext.fillStyle = c;
-        //     canvasContext.fillRect(x, y, w, h);
-        // }
+        function colorRect(x, y, w, h, c) {
+            canvasContext.fillStyle = c;
+            canvasContext.fillRect(x, y, w, h);
+        }
 
         // function drawImg(src, x, y, w, h) {
         //     canvasContext.drawImage(src, x, y, w, h);
