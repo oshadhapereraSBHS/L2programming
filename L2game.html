@@ -19,11 +19,11 @@
         // var leftKeyPress = false;
         // var rightKeyPress = false;
 
-        // var playerXpos = 250;
-        // var playerYpos = 500;
-        // var playerXspeed = 5;
-        // var playerYspeed = 5;
-        // const PLAYER_SIZE = 100;
+        var playerXpos = 250;
+        var playerYpos = 500;
+        var playerXspeed = 5;
+        var playerYspeed = 5;
+        const PLAYER_SIZE = 100;
 
 
         window.onload = function () {
@@ -38,7 +38,7 @@
             colorRect(0, 0, canvas.width, canvas.height, 'black'); // bg
         //     drawImg(player, playerXpos, playerYpos, PLAYER_SIZE, PLAYER_SIZE)
         //     playerMove();
-            colorRect(100,100, 10,10,'red')
+            colorRect(playerXpos, playerYpos, PLAYER_SIZE, PLAYER_SIZE, 'red')
 
         }
 
